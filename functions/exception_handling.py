@@ -1,4 +1,17 @@
+try:
+    x = int(input('enter first value'))
+    y = int(input('enter second value'))
+    print(x / y)
+except ZeroDivisionError as msg:
+    print("error type name is:", msg)
 
+    # print exception class name.
+    print("error class name is:", msg.__class__)
+    print("error discription is:", msg)
+except ValueError:
+    print("please provide int value only:")
+
+# FileNotFound exception Handling with finally block
 
 def find_file():
     try:
