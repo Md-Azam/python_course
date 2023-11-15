@@ -1,0 +1,96 @@
+Question 1: String Manipulation:
+Write a Python code that takes a string as input and returns the word by word reversed version of the string.
+For example, if the input is "hello coder how are you," the function should return "olleh redoc woh era uoy ."
+
+Question 2: List Operations:
+a)Create a list of numbers and write a Python program to find the sum of all the even numbers in the list.
+
+b)Short the list in ascending order without using any inbuilt python method.
+You should use a loop to iterate through the list and conditionally add the even numbers to the sum.
+
+
+Question 3: Dictionary Problems.
+For Given dictionary,
+dist = {"Dict1": {
+    "age": 21,
+    "name":"krunal",
+    "email":"kaman23@gmail.com",
+    "address": [
+        "local",
+        {
+            "lane": "mehdipatnam",
+            "city": "hyderabad",
+            "pincode":45667,
+        },
+        "permanent", {
+            "lane": "pachhati",
+            "city": "gaya",
+            "pincode":566,
+        },
+    ],
+
+    "payments": [
+        {
+            "transactionDate": "2022-09-09",
+            "amount": 2000
+        }, {
+            "transactionDate":"2022-09-08",
+            "amount":5600
+
+        }],
+    "profile": {
+        "profileurl":"http://localhost:8096/user/profile/1"
+    }
+}
+}
+
+
+a)Write Python code to retrieve and print the user's name and email from the dictionary.
+
+
+b)Nested Dictionary Update: Add a new payment entry with a transaction date of "2022-09-10" and an amount of 3000 to the "payments" list.
+
+
+# Add the new payment entry to the "payments" list
+dist["Dict1"]["payments"].append(new_payment)
+
+c)Nested Dictionary Deletion: Remove the user's "permanent" address details (lane, city, and pincode) from the dictionary.
+
+if "local" in dist["Dict1"]["address"]:
+    index_1 = dist["Dict1"]["address"].index("local")+1  # Find the index of "local"
+    del dist["Dict1"]["address"][index_1]
+    # del dist["Dict1"]["address"].index_1
+
+# print(dist["Dict1"]["address"][dist["Dict1"]["address"].index("permanent")+1])
+
+d)Dictionary Navigation: Write a Python function to extract and return the profile URL from the dictionary.
+
+e)Dictionary Data Validation: Create a Python script that checks whether the user's age is greater than or equal to 18. If it is, print "Adult," otherwise print "Minor."
+
+user_age = dist["Dict1"]["age"]
+if user_age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+f)Nested List and Dictionary Operations: Update the "address" list to include an additional temporary address with lane, city, and pincode details.
+
+g)Search and Update: Write a Python program that searches for a payment with a specific transaction date and updates the amount for that payment.
+
+i)Profile URL Modification: Create a Python script that updates the profile URL to a new URL provided as input by the user.
+
+j)Data Removal: Remove the "profile" dictionary from the main dictionary.
+
+
+Question 4: String Search.
+Write  Python function that takes a list of strings and a target string as input.
+The function should return the count of how many times the target string appears in the list of strings.
+
+Question 5: String and digit sorting.
+Write a Python program that takes an input string, segregates its characters by alphabetical order (letters first) and then digits .
+
+input - "hello 1234 shriadhar234"
+output expected- "aadehhhillorrs1223344"
+
+a = []
+digits =[]
