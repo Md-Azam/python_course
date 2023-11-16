@@ -49,12 +49,14 @@ print(f'square of two given value is : {my_square(2, 4)}')
 
 
 # recursive function :
-def my_recursion(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return (n) * my_recursion(n - 1)
-    # my_recursion(5)
+if '__name__' == '__main__':
+    def my_recursion(n):
+        if n == 0 or n == 1:
+            return 1
+        else:
+            return (n) * my_recursion(n - 1)
+        # my_recursion(5)
 
 
-print(my_recursion(5))
+    print(my_recursion(5))
+
